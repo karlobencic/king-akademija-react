@@ -1,20 +1,11 @@
 import React, { useState } from 'react';
-import Dropdown from './Dropdown';
+import { Dropdown } from 'semantic-ui-react'
 import Convert from './Convert';
 
 const options = [
-    {
-        label: 'Russian',
-        value: 'ru'
-    },
-    {
-        label: 'Arabic',
-        value: 'ar'
-    },
-    {
-        label: 'Croatian',
-        value: 'hr'
-    }
+    { key: 'ru', value: 'ru', flag: 'ru', text: 'Russian' },
+    { key: 'in', value: 'in', flag: 'in', text: 'Indian' },
+    { key: 'hr', value: 'hr', flag: 'hr', text: 'Croatian' },
 ];
 
 const Translate = () => {
@@ -30,10 +21,12 @@ const Translate = () => {
                 </div>
             </div>
             <Dropdown
-                label="Select a Language"
-                selected={language}
-                onSelectedChange={setLanguage}
+                placeholder='Select a language'
+                fluid
+                search
+                selection
                 options={options}
+                onChange={(e, result) => setLanguage(result)}
             />
             <hr />
             <h3 className="ui header">Output</h3>

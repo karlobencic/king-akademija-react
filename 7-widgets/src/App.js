@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import Accordion from './components/Accordion';
 import Search from './components/Search';
-import Dropdown from './components/Dropdown';
 import Translate from './components/Translate';
 import TabEnum from './TabEnum';
 
@@ -26,12 +25,6 @@ const showAccordion = (tab) => {
     }
 };
 
-const showDropdown = (tab) => {
-    if (tab === TabEnum.DROPDOWN) {
-        return <Dropdown label={"Dropdown"} />;
-    }
-};
-
 const showWiki = (tab) => {
     if (tab === TabEnum.WIKI) {
         return <Search />;
@@ -51,13 +44,11 @@ export default () => {
         <div className="ui container">
             <div className="ui buttons">
                 <button className="ui button large" onClick={() => setTab(TabEnum.ACCORDION)}>ACCORDION</button>
-                <button className="ui button large" onClick={() => setTab(TabEnum.DROPDOWN)}>DROPDOWN</button>
                 <button className="ui button large" onClick={() => setTab(TabEnum.TRANSLATE)}>TRANSLATE</button>
                 <button className="ui button large" onClick={() => setTab(TabEnum.WIKI)}>WIKI</button>
             </div>
             {showAccordion(tab)}
             {showWiki(tab)}
-            {showDropdown(tab)}
             {showTranslate(tab)}
         </div>
     );
