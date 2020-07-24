@@ -1,0 +1,10 @@
+1 jsx
+2 components (props)
+3 seasons (state, lifecycle) + hooks
+4 translate (context)
+5 pics (forms, api)
+6 hooks
+7 widgets (hooks-advanced)
+8 songs (redux)
+9 blog (redux store, thunk)
+10 streams (router, auth)

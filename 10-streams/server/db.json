@@ -1,0 +1,37 @@
+{
+  "streams": [
+    {
+      "title": "CS GO",
+      "description": "CS GO",
+      "videoId": "L2_aUNEQduw",
+      "id": 2
+    },
+    {
+      "title": "Brand New Stream",
+      "description": "Not so new",
+      "videoId": "0_k_sJOf4X0",
+      "id": 38
+    },
+    {
+      "title": "Best Stream Ever",
+      "description": "Yeap, this is the one",
+      "videoId": "xD3P9TZ3i_c",
+      "userId": "105937656879347277874",
+      "id": 40
+    },
+    {
+      "title": "Hell Yeah",
+      "description": "Oh Yeah",
+      "videoId": "2frJ3e0hxPE",
+      "userId": "105937656879347277874",
+      "id": 41
+    },
+    {
+      "title": "test",
+      "description": "test2",
+      "videoId": "aw",
+      "userId": "104525978697155495804",
+      "id": 42
+    }
+  ]
+}
